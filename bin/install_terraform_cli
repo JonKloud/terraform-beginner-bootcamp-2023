@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-PROJECT_ROOT='/workspace/terraform-beginner-bootcamp-2023'
 cd /workspace
 
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
