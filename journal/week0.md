@@ -23,8 +23,8 @@
     + [Terraform Apply](#terraform-apply)
     + [Terraform Destroy](#terraform-destroy)
     + [Terraform Lock Files](#terraform-lock-files)
-  * [Terraform State Files](#terraform-state-files)
-  * [Terraform Directory](#terraform-directory)
+    + [Terraform State Files](#terraform-state-files)
+    + [Terraform Directory](#terraform-directory)
 - [Issues with Terraform CLoud Login and Gitpod Workspace](#issues-with-terraform-cloud-login-and-gitpod-workspace)
 
 ## Semantic Versioning :mage:
@@ -256,7 +256,7 @@ If you lose this file, you lose knowing the state of your infrastructure.
 
 `.terraform` directory contains binaries of terraform providers.
 
-## Issues with Terraform CLoud Login and Gitpod Workspace
+### Issues with Terraform CLoud Login and Gitpod Workspace
 
 When attempting to run 'terraform login' it will launch bash a wiswig view to generate a token. However it doest not work as expected in Gitpod VSCode in the browser.
 
