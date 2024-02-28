@@ -1,6 +1,6 @@
 # Terraform Beginner Bootcamp 2023 - Week 0
 
-- [Semantic Versioning](#semantic-versioning)
+- [Semantic Versioning](#semantic-versioning-mage)
 - [Install the Terraform CLI](#install-the-terraform-cli)
   * [Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
   * [Considerations for Linux distributions](#considerations-for-linux-distributions)
@@ -8,7 +8,7 @@
     + [Shebang Considerations](#shebang-considerations)
     + [Execution Considerations](#execution-considerations)
     + [Linux Permissions Considerations](#linux-permissions-considerations)
-- [Gitpod Lifecycles - Before, Init, Command](#gitpod-lifecycle---before--init--command)
+- [Gitpod Lifecycles - Before, Init, Command](#gitpod-lifecycles-before-init-command)
 - [Working witn Env Vars](#working-witn-env-vars)
   * [Setting and Unsetting Env Vars](#setting-and-unsetting-env-vars)
   * [Printing Vars](#printing-vars)
