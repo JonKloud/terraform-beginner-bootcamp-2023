@@ -277,7 +277,7 @@ Provide the following code (replace your token in the file):
 ```json
 {
     "credentials": {
-        "app.terraform.io: {
+        "app.terraform.io": {
             "token": "YOUR-TERRAFORM-CLOUD-TOKEN"
         }
     }
