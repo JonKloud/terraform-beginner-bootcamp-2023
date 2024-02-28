@@ -3,7 +3,7 @@
 ![architectual-diagram](https://github.com/JonKloud/terraform-beginner-bootcamp-2023/assets/160905603/356dae45-b760-4893-ae85-12d03f859dad)
 
 ## Weekly Journals
-- [Week 0 Journal](/journal/week0)
+- [Week 0 Journal](/journal/week0.md)
 
 ## Extras
 -[Github Markdown TOC Generator](http://ecotrust-canada.github.io/markdown-toc/)
