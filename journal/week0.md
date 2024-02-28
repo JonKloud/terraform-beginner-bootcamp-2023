@@ -5,7 +5,7 @@
     + [Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
     + [Considerations for Linux distributions](#considerations-for-linux-distributions)
     + [Refactoring into Bash Scripts](#refactoring-into-bash-scripts)
-    + [Shebang Considerations](#shebang-considerations)
+      - [Shebang Considerations](#shebang-considerations)
       - [Execution Considerations](#execution-considerations)
       - [Linux Permissions Considerations](#linux-permissions-considerations)
     + [Gitpod Lifecycle (Before, Init, Command)](#gitpod-lifecycle--before--init--command-)
@@ -78,7 +78,7 @@ This bash script is located here: [./bin/install_terraform.cli](./bin/install_te
 - This allow us an easier to debug and execute manually Terraform CLI install.
 - This will allwo better portability for other projects that to install Terraform CLI.
 
-### Shebang Considerations
+#### Shebang Considerations
 
 A Shebang (pronounced Sha-bang) tells the bash script what program that will interpret the script. eg. `#!/bin/bash`
 
