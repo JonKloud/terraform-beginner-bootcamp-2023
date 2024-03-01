@@ -17,3 +17,23 @@ variable "bucket_name" {
     error_message = "Invalid bucket name. Bucket name must be between 3 and 63 characters long and can contain only lowercase letters, numbers, periods, and dashes."
   }
 }
+
+variable "index_html_filepath" {
+  type        = string
+  description = "Filepath to the index.html file"
+
+  validation {
+    condition     = can(file(var.index_html_filepath))
+    error_message = "The provided path for index.html doest not exist."
+  }
+}
+
+variable "error_html_filepath" {
+  type        = string
+  description = "Filepath to the index.html file"
+
+  validation {
+    condition     = can(file(var.error_html_filepath))
+    error_message = "The provided path for error.html doest not exist."
+  }
+}
