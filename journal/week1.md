@@ -1,5 +1,24 @@
 # Terraform Beginner Bootcamp 2023 - Week 1
 
+## Fixing Tags
+
+[How to Delete Local and Remote Tags on Git](https://devconnected.com/how-to-delete-local-and-remote-tags-on-git/)
+
+Locall delete a tag
+
+`git tag -d <tag_name>`
+
+Remotely delete tag
+
+`git push --delete origin tagname`
+
+Checkout the commit that you want to retag. Grab the sha from your Github history.
+
+`git checkout <SHA>
+git tag M.M.P
+git push --tags
+git checkout main`
+
 ## Root Module Structure
 
 Our root module structure is as follow:
