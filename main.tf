@@ -18,7 +18,7 @@ terraform {
 }
 
 provider "terratowns" {
-  endpoint = "http://localhost:4567"
+  endpoint = "http://localhost:4567/api"
   user_uuid = "e328f4ab-b99f-421c-84c9-4ccea042c7d1"
   token = "9b49b3fb-b8e9-483c-b703-97ba88eef8e0"
 }
@@ -33,3 +33,13 @@ provider "terratowns" {
 #  assets_path = var.assets_path
 #}
 
+resource "terratowns_home" "home" {
+  name = "How to make a spanish omelette"
+  description = <<DESCRIPTION
+This typical spanish dish is one of my favourite.
+In this page you'll find my grandmother's recipe. Best in the world.
+DESCRIPTION
+  domain_name = "123456.cloudfront.net"
+  town = "cooker-cove"
+  content_version = 1 
+}
