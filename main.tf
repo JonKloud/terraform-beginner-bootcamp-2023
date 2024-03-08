@@ -5,33 +5,22 @@ terraform {
       version = "1.0.0"
     }
   }
-
-  #cloud {
-  #  organization = "TerraformBB"
-#
-  #  workspaces {
-  #    name = "terra-house-1"
-  #  }
-  #}
-
-
 }
 
 provider "terratowns" {
-  endpoint = "http://localhost:4567/api"
-  user_uuid = "e328f4ab-b99f-421c-84c9-4ccea042c7d1"
-  token = "9b49b3fb-b8e9-483c-b703-97ba88eef8e0"
+  endpoint = var.terratowns_endpoint
+  user_uuid = var.teacherseat_user_uuid
+  token = var.terratowns_access_token
 }
 
-#module "terrahouse_aws" {
-#  source = "./modules/terrahouse_aws"
-#  user_uuid = var.user_uuid
-#  bucket_name = var.bucket_name
-#  index_html_filepath = var.index_html_filepath
-#  error_html_filepath = var.error_html_filepath
-#  content_version = var.content_version
-#  assets_path = var.assets_path
-#}
+module "terrahouse_aws" {
+  source = "./modules/terrahouse_aws"
+  user_uuid = var.teacherseat_user_uuid
+  index_html_filepath = var.index_html_filepath
+  error_html_filepath = var.error_html_filepath
+  content_version = var.content_version
+  assets_path = var.assets_path
+}
 
 resource "terratowns_home" "home" {
   name = "How to make a spanish omelette"
@@ -39,7 +28,7 @@ resource "terratowns_home" "home" {
 This typical spanish dish is one of my favourite.
 In this page you'll find my grandmother's recipe. Best in the world.
 DESCRIPTION
-  domain_name = "123456.cloudfront.net"
-  town = "cooker-cove"
+  domain_name = "3fdq3gz.cloudfront.net"
+  town = "missingo"
   content_version = 1 
 }
